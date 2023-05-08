@@ -72,69 +72,78 @@
 
 
     <footer class="container-fluid mt-auto justify-text-center">
-        <div id="footer-details" class="row">
-            <div class="col-md-12">
-                <h5>Find Us</h5>
-            </div>
-            <hr>
-            <div class="col-md-6">
+        <div id="footer-details" class="row align-items-center justify-content-center pt-2">
+            <div class="">
                 <ul class="list-unstyled">
-                    <li>
-                        <span class="inline-block"><i class="fa fa-map-marker" aria-hidden="true"></i>  Big Road, Street 30, 25 </span>
+                    <li class=" list-inline-item mr-2 pb-2">
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> 10 James Street
+                        </span>
                     </li>
-                    <li>
-                        <span class="inline-block"><i class="fa fa-phone" aria-hidden="true"></i> 00897653425</span>
+                    <li class=" list-inline-item mr-2 pb-2">
+                        <a class="color" href=“”>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i> 00897653425</span>
+                        </a>
                     </li>
-                    <li>
-                        <span class="inline-block"><i class="fa fa-at" aria-hidden="true"></i> smorebrod@smorrebrod.com</span>
+                    <li class="list-inline-item mr-2 pb-2">
+                        <a class="color" href=“”>
+                            <span><i class="fa fa-at" aria-hidden="true"></i> smorebrod@smorrebrod.com</span>
+                        </a>
                     </li>
-                    <li>
-                        <span class="inline-block"><i class="fa fa-envelope-o" aria-hidden="true"></i> wwww.smorrebrod.com</span>
+                    <li class="list-inline-item pb-2">
+                        <a class="color" href="">
+                            <span><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                wwww.smorrebrod.com</span>
+                        </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="links-color" target="_blank" href="">
+                    <li class="list-inline-item ml-3 pr-1">
+                        <a class="links-color-icon" target="_blank" href="">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="links-color" target="_blank" href="#">
+                    <li class="list-inline-item pr-1">
+                        <a class="links-color-icon" target="_blank" href="#">
                             <i class="fa fa-pinterest" aria-hidden="true"></i>
                             <span class="sr-only">Pinterest</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="links-color" target="_blank" href="#">
+                    <li class="list-inline-item pr-1">
+                        <a class="links-color-icon" target="_blank" href="#">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6" id="map">
-                
-
-            </div>
+            <div class="row" id="map"></div>
         </div>
+
     </footer>
     <script>
         function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: {
-                    lat: 51.906934,
-                    lng: -8.465744,
-                }
+
+            const myLatLng = { lat: 51.897692, lng: -8.480438 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: myLatLng
             });
-        }
+	
+    // The marker, positioned at selected location
+    const marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Smorrebrod Gastro Bar'
+    });
+}
+window.initMap = initMap;
     </script>
-        <script
-            src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-        </script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEUPjkQfr_fyjNS4IxNWidGiptF73QJp8&callback=initMap">
-        </script>
-     
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEUPjkQfr_fyjNS4IxNWidGiptF73QJp8&callback=initMap">
+    </script>
+
 </body>
 
 </html>

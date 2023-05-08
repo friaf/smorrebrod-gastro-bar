@@ -90,14 +90,26 @@ h1 h2 h3 h4 h5 {
     padding-top: 10px;
 }
 
-.container-fluid .links-color {
+.container-fluid .color {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container-fluid .color:hover {
+    color: #ef8354;
+    text-decoration: none;
+}
+
+.container-fluid .links-color-icon {
     color: #ffffff;
     font-size: large;
 }
 
-.container-fluid .links-color:hover {
+.container-fluid .links-color-icon:hover {
     color: #ef8354;
 }
+
+
 
 .hero-text {
     color: #ffffff;
@@ -106,13 +118,18 @@ h1 h2 h3 h4 h5 {
 }
 
 .btn-danger {
-    background-color: #cf5522;
+    background-color: #cf5522  ;
     border: none;
 }
 
 .btn-danger:hover {
-    background-color: #ef8354;
+    background-color: #b53b07;
     border: none;
 }
 
-#map {min-height: 150px;}
+#map {
+    min-height: 200px;
+    width: 100%;
+
+
+}
