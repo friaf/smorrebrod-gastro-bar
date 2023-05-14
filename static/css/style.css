@@ -24,14 +24,17 @@ h1 h2 h3 h4 h5 {
 }
 
 
-.navbar-light .navbar-nav .nav-item  .nav-link {
+.navbar-dark .navbar-nav .nav-item  .nav-link {
     color: #ffffff;
     letter-spacing: 0.05em;
 } 
 
-.navbar-light .navbar-nav .nav-item  .nav-link:hover {
+.navbar-dark .navbar-nav .nav-item  .nav-link:hover {
     color: #ef8354;
    }
+.row {
+    width: 100%;
+}
 
 .bg-image {
     background-image: url("/static/images/hero.jpeg");
@@ -57,30 +60,7 @@ h1 h2 h3 h4 h5 {
     background-color: rgba(53, 51, 60, 0.7);
 }
 
-.bg-image.menu {
-    background-image: url("/static/images/grey.jpg");
-    position: relative;
-    display: flex;
-    height: 600px;
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;   
- 
-}
 
-.bg-image.menu::before {
-    position: absolute;
-    content: "";
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(79, 71, 108, 0.2);
-
-}
 
 .container-fluid {
     color: #ffffff;
@@ -109,6 +89,24 @@ h1 h2 h3 h4 h5 {
     color: #ef8354;
 }
 
+.link {
+    color: #ef8354;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ef8354;
+
+}
+
+.container.bg-image {
+    background-image: url("/static/images/beer.jpg");
+
+    background-repeat:no-repeat;
+  
+
+}
 
 
 .hero-text {
@@ -129,7 +127,11 @@ h1 h2 h3 h4 h5 {
 
 #map {
     min-height: 200px;
-    width: 100%;
-
-
+ 
 }
+
+.text-white {
+    color: #ffffff;
+}
+
+
