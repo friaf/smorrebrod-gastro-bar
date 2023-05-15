@@ -124,6 +124,20 @@ h1 h2 h3 h4 h5 {
     background-color: rgba(53, 51, 60, 0.7);
 }
 
+.jumbotron.booking {
+    color: white;
+    background-image: url("/static/images/booking.jpg");
+    position: relative;
+    display: flex;
+    height: 600px;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center; 
+}
+
 
 .hero-text {
     color: #ffffff;
